@@ -37,12 +37,13 @@ def process_alerts(alert_file_path):
                     # Formata a mensagem com os campos necessários
                     message = (
                         f"⚠️ *Alerta Wazuh* ⚠️\n"
-                        f"- *Descrição:* {rule.get('description', 'N/A')}\n"
-                        f"- *Nível:* {rule.get('level', 'N/A')}\n"
-                        f"- *Agente:* {agent.get('name', 'N/A')} (ID: {agent.get('id', 'N/A')})\n"
-                        f"- *IP:* {agent.get('ip', 'N/A')} (Porta: {data.get('srcport', 'N/A')})\n"  
-                        f"- *Mitre:* {rule.get('mitre', 'N/A')}\n"                     
-                        f"- *Log Completo:* {alert_json.get('full_log', 'N/A')}\n"
+                        f"❌ *Descrição:* {rule.get('description', 'N/A')}\n"
+                        f"⏰ *Timestamp:* {alert_json.get('timestamp', 'N/A')}\n"
+                        f"☢️ *Nível:* {rule.get('level', 'N/A')}\n"
+                        f"💡 *Agente:* {agent.get('name', 'N/A')} (ID: {agent.get('id', 'N/A')})\n"                        
+                        f"📱 *IP:* {agent.get('ip', 'N/A')} (Porta: {data.get('srcport', 'N/A')})\n"  
+                        f"📰 *Mitre:* {rule.get('mitre', 'N/A')}\n"                     
+                        f"📑 *Log Completo:* {alert_json.get('full_log', 'N/A')}\n"
                     )
 
                     # Envia a mensagem para o Telegram
