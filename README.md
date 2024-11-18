@@ -6,8 +6,8 @@ don´t forget to change -> TELEGRAM_TOKEN and TELEGRAM_CHAT_ID. Visit @BotFather
 
 Wazuh TAG Integration
 
-<integration>
-   <name>telegram.py</name>
-   <level>10</level>
-   <alert_format>json</alert_format>
-</integration> 
+#<integration>
+#   <name>telegram.py</name>
+#   <level>10</level>
+#   <alert_format>json</alert_format>
+#</integration> 
